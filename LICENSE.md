@@ -1,0 +1,2 @@
+This code is licensed under a Creative Commons Attribution 4.0 International License, as detailed in the reference publication Bayraktar, E., Graf, T., Ayuk, F.A. et al. Data-driven grading of acute graft-versus-host disease. Nature Communications 14, 7799 (2023). https://doi.org/10.1038/s41467-023-43372-2.
+Details on this license are provided in the section "Additional information, Open Access". A copy of this license is available under the following domain: https://creativecommons.org/licenses/by/4.0/.

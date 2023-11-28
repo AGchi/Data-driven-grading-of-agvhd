@@ -1,0 +1,6 @@
+Length clinics_slg: 1998
+c1: PC1 loadings, n_components=3, 1998, all: [-0.73458179  0.13154542  0.6656466 ]
+PC2 loadings, n_components=3, 1998, all: [0.67851911 0.14413384 0.72030359]
+PC3 loadings, n_components=3, 1998, all: [-0.00118956  0.98077584 -0.19513417]
+PC variance, n_components=3, 1998, all: [0.44512502 0.38851498 0.16636   ]
+PC Eigenvalues, n_components=3, 1998, all: [1.65380397 1.44347676 0.61808888]

@@ -1,0 +1,102 @@
+    # clinical data that should be analyzed
+dataset:
+    MLstages_data_path: ../data/final/simulated/simulation_train/
+    MLstages_data_name: simulation_train_ML_stages_overall.xlsx
+
+    # output data of grading analysis
+out:
+    ML_grades_outpath: ../data/final/simulated/simulation_train/
+    ML_grades_data_name: simulation_train_ML_grades_overall.xlsx
+
+    # column names from the input file (output from grading_analysis)
+columns:
+    ML_stages_PC1: PC1_stages
+    ML_stages_simplified_PC1: PC1_stages_simplified
+
+others:
+    scaling: False
+
+# Define how the stages are grouped into grades
+ML_Grading:
+    PC1_grades:
+        columnname: ML_PC1_grades
+        grade1:
+            - 1
+            - 2
+            - 3
+            - 4
+        grade2:
+            - 5
+            - 6
+            - 7
+            - 8
+        grade3:
+            - 9
+            - 10
+            - 11
+        grade4:
+            - 12
+            - 13
+            - 14
+    PC2_grades:
+        columnname: ML_PC2_grades
+        grade1:
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+        grade2:
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+        grade3:
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+        grade4:
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+
+
+    PC1_simplified_grades:
+        columnname: ML_PC1_simplified_grades
+        grade1:
+            - 1
+            - 2
+        grade2:
+            - 3
+            - 4
+        grade3:
+            - 5
+            - 6
+        grade4:
+            - 7
+
+    PC2_simplified_grades:
+        columnname: ML_PC2_simplified_grades
+        grade1:
+            - 1
+            - 2
+            - 3
+        grade2:
+            - 4
+            - 5
+            - 6
+        grade3:
+            - 7
+            - 8
+            - 9
+        grade4:
+            - 10
+            - 11
+
+

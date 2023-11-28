@@ -1,0 +1,61 @@
+     # clinical data that should be analyzed
+dataset:
+    clinical_data_path: ../data/simulatedData/
+    clinical_data_name: simulatedData_gvhdGrading_reduced.xlsx
+
+    # names of the columns that are necessary to do the grading analysis
+    # has_gvhd: name of the column with information, if patient has aGVHD
+    # (1) or  not (0)
+    # skin_stage: name of the column with skin stages (0-4)
+    # liver_stage: name of the column with liver stages (0-4)
+    # gi_stage: name of the column with gi stages (0-4)
+    # center: name of the column that include different center names if there
+    # are different centers in the data
+
+columns:
+    has_gvhd: has_aGVHD
+    skin_stage: skin
+    liver_stage: liver
+    gi_stage: gut
+    center: center
+
+    # names of the out columns. Different PC based stages will be calculated
+    # during grading analysis
+columns_out:
+    ML_stages_PC1: PC1_stages
+    ML_stages_simplified_PC1: PC1_stages_simplified
+
+    # clinics: define which clinics (center column) should be analyzed
+    # you can add the names of the clinics as bullet points
+    # scaling: define if data (skin´, lvier and gi stages) should be scaled
+    # before grading analysis. If the stages are all i nthe ranges from 0-4,
+    # false is recommended
+others:
+    clinics:
+        - simulation
+    scaling: false
+
+    # pca_outpath: path of the grading analysis restuls
+    # data_outpath:
+out:
+    pca_outpath: ../pca_results/simulated/
+    data_outpath: ../data/final/simulated/
+
+    # some plot settings
+    # skin, liver and gi label: labeling for biplot
+    # PC1, PC2 and PC3 label, screeplot xlabel, ylabel and title: labeling for
+    # scree plot
+
+plotsettings:
+    skin_label: Skin
+    liver_label: Liver
+    gi_label: GI
+    PC1_label: PC1
+    PC2_label: PC2
+    PC3_label: PC3
+    screeplot_xlabel:
+    screeplot_ylabel: Proportion of variance
+    screeplot_title:
+
+
+
